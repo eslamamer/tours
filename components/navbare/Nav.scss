@@ -1,0 +1,32 @@
+@import '../../App.scss';
+
+.nav{
+    background: $mainBlack;
+    padding: .5rem 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    .navlinks{
+        align-self: center;
+        text-align: center;
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+        .navlink{
+            text-decoration: none;
+            text-transform: capitalize;
+            color: $mainGray;
+            font-size: 1.5rem;
+            transition: all .5s linear;
+             &:hover{
+                color:$mainGreen;
+            }
+        }
+        .active{
+            color:$mainGreen;  
+        }
+    }
+}
+
+
+
